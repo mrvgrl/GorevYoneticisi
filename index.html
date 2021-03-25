@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Görev Yöneticisi, Planlayıcı, Ajanda">
+    <meta name="author" content="Merve GÜREL">
+    <title>Görev Yöneticisi</title>
+
+
+    <link rel="icon" href="./content/img/favicon.ico" type="image/icon">
+    <!-- Font Awesome allmin css tag -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <!-- Kullanılan css dosyaları -->
+    <link rel="stylesheet" href="./content/css/global.css" />
+    <link rel="stylesheet" href="./content/css/main.css" />
+    <link rel="stylesheet" media="(max-width:768px)" href="./content/css/tablet.css">
+    <link rel="stylesheet" media="(max-width:501px)" href="./content/css/mobile.css">
+
+</head>
+
+<body>
+    <div id="spinner" class="d-flex justify-content-center yukleme">
+        <div class="spinner-grow yukleme " role="status">
+          <span class="visually-hidden ">Loading...</span>
+        </div>
+      </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #435560!important;">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="font-size: 1.25rem; " href="#">Görev Yöneticisi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#plan">Planlayıcı</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Ara</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-fluid" id="plan">
+
+        <h3 class="text-center heading-medium bg-dark p-1" style="background-color: #435560!important;">Mart, 2021</h3>
+
+        <table class="table table-bordered">
+            <thead class=" table-light text-center">
+                <th>Pazartesi</th>
+                <th>Salı</th>
+                <th>Çarşamba</th>
+                <th>Perşembe</th>
+                <th>Cuma</th>
+                <th>Cumartesi</th>
+                <th>Pazar</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">01</p>
+                            </div>
+                        </div>
+
+                        <div class="overflow-auto satir">
+                            <ol class="list-group">
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#3546fa;padding-right:5px;"></i>React Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#9e9d89;padding-right:5px;"></i>Zoom Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#e48900;padding-right:5px;"></i>Front End Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#2b2e4a;padding-right:5px;"></i>Hastane Ziyareti</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#151515;padding-right:5px;"></i>Api Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#ff7171;padding-right:5px;"></i>Grafik Tasarım</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#b8b5ff;padding-right:5px;"></i>Proje Onay</a></li>     
+                            </ol>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">02</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                            <ol class="list-group">
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#3546fa;padding-right:5px;"></i>React Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#9e9d89;padding-right:5px;"></i>Zoom Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#e48900;padding-right:5px;"></i>Front End Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#2b2e4a;padding-right:5px;"></i>Hastane Ziyareti</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#151515;padding-right:5px;"></i>Api Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#ff7171;padding-right:5px;"></i>Grafik Tasarım</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#b8b5ff;padding-right:5px;"></i>Proje Onay</a></li>     
+                            </ol>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">03</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">04</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">05</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">06</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">07</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                    
+                            <ol class="list-group">
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#3546fa;padding-right:5px;"></i>React Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#9e9d89;padding-right:5px;"></i>Zoom Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#e48900;padding-right:5px;"></i>Front End Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#2b2e4a;padding-right:5px;"></i>Hastane Ziyareti</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#151515;padding-right:5px;"></i>Api Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#ff7171;padding-right:5px;"></i>Grafik Tasarım</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#b8b5ff;padding-right:5px;"></i>Proje Onay</a></li>     
+                            </ol>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">08</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">09</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                    
+                            <ol class="list-group">
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#3546fa;padding-right:5px;"></i>React Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#9e9d89;padding-right:5px;"></i>Zoom Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#e48900;padding-right:5px;"></i>Front End Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#2b2e4a;padding-right:5px;"></i>Hastane Ziyareti</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#151515;padding-right:5px;"></i>Api Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#ff7171;padding-right:5px;"></i>Grafik Tasarım</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#b8b5ff;padding-right:5px;"></i>Proje Onay</a></li>     
+                            </ol>
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">10</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">11</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">12</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                            <ol class="list-group">
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#3546fa;padding-right:5px;"></i>React Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#9e9d89;padding-right:5px;"></i>Zoom Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#e48900;padding-right:5px;"></i>Front End Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#2b2e4a;padding-right:5px;"></i>Hastane Ziyareti</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#151515;padding-right:5px;"></i>Api Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#ff7171;padding-right:5px;"></i>Grafik Tasarım</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#b8b5ff;padding-right:5px;"></i>Proje Onay</a></li>     
+                            </ol>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">13</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">14</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">15</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">16</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">17</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">18</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">19</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">20</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                            <ol class="list-group">
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#3546fa;padding-right:5px;"></i>React Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#9e9d89;padding-right:5px;"></i>Zoom Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#e48900;padding-right:5px;"></i>Front End Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#2b2e4a;padding-right:5px;"></i>Hastane Ziyareti</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#151515;padding-right:5px;"></i>Api Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#ff7171;padding-right:5px;"></i>Grafik Tasarım</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#b8b5ff;padding-right:5px;"></i>Proje Onay</a></li>     
+                            </ol>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">21</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">22</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">23</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">24</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">25</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                            <ol class="list-group">
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#3546fa;padding-right:5px;"></i>React Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#9e9d89;padding-right:5px;"></i>Zoom Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#e48900;padding-right:5px;"></i>Front End Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#2b2e4a;padding-right:5px;"></i>Hastane Ziyareti</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#151515;padding-right:5px;"></i>Api Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#ff7171;padding-right:5px;"></i>Grafik Tasarım</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#b8b5ff;padding-right:5px;"></i>Proje Onay</a></li>     
+                            </ol>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">26</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">27</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">28</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">29</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                            <ol class="list-group">
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#3546fa;padding-right:5px;"></i>React Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#9e9d89;padding-right:5px;"></i>Zoom Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#e48900;padding-right:5px;"></i>Front End Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#2b2e4a;padding-right:5px;"></i>Hastane Ziyareti</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#151515;padding-right:5px;"></i>Api Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#ff7171;padding-right:5px;"></i>Grafik Tasarım</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#b8b5ff;padding-right:5px;"></i>Proje Onay</a></li>     
+                            </ol>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">30</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6 text-sm-start">
+                                <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#kaydetModal">
+                                    <i class="fas fa-plus mx-lg-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p class="mx-lg-2">31</p>
+                            </div>
+                        </div>
+                        <div class="overflow-auto satir">
+                            <ol class="list-group">
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#3546fa;padding-right:5px;"></i>React Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#9e9d89;padding-right:5px;"></i>Zoom Toplantı</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#e48900;padding-right:5px;"></i>Front End Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#2b2e4a;padding-right:5px;"></i>Hastane Ziyareti</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#151515;padding-right:5px;"></i>Api Test</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#ff7171;padding-right:5px;"></i>Grafik Tasarım</a></li>
+                                <li class="list-group-item"> <a href="" class="modalOpen" data-bs-toggle="modal" data-bs-target="#guncelleModal"><i class="fas fa-circle" style="color:#b8b5ff;padding-right:5px;"></i>Proje Onay</a></li>     
+                            </ol>
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="overflow-auto satir">
+                            <div class="text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p style="color:darkgray">01</p>
+                            </div>
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="overflow-auto satir">
+                            <div class="text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p style="color:darkgray">02</p>
+                            </div>
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="overflow-auto satir">
+                            <div class="text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p style="color:darkgray">03</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="overflow-auto satir">
+                            <div class="text-sm-end" style="font-size:1em; font-weight:bold;">
+                                <p style="color:darkgray">04</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <div class="modal fade" id="kaydetModal" tabindex="-1" aria-labelledby="kaydetModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="kaydetModalLabel">Görev Ekle</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Başlık:</label>
+                            <input type="text" class="form-control" id="baslik" placeholder="Görev Başlığı">
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="recipient-name" class="col-form-label">Başlangıç Tarihi:</label>
+                                    <input type="date" class="form-control" id="baslangicTarihi">
+                                </div>
+                                <div class="col">
+                                    <label for="recipient-name" class="col-form-label">Bitiş Tarihi:</label>
+                                    <input type="date" class="form-control" id="bitisTarihi">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Not:</label>
+                            <textarea class="form-control" id="message-text" placeholder="Açıklama"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                    <button type="button" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="guncelleModal" tabindex="-1" aria-labelledby="guncelleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="guncelleModalLabel">Görev Güncelle</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Başlık:</label>
+                            <input type="text" class="form-control" id="baslik" placeholder="Görev Başlığı" value="React Toplantı">
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="recipient-name" class="col-form-label">Başlangıç Tarihi:</label>
+                                    <input type="date" class="form-control" id="baslangicTarihi" value="2021-03-01">
+                                </div>
+                                <div class="col">
+                                    <label for="recipient-name" class="col-form-label">Bitiş Tarihi:</label>
+                                    <input type="date" class="form-control" id="bitisTarihi" value="2021-03-05">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Not:</label>
+                            <textarea class="form-control" id="message-text" placeholder="Açıklama">React Toplantısı yapılacak. Bu toplantıda hooks yapıları incelenecek.</textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Sil</button>
+                    <button type="button" class="btn btn-primary">Güncelle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-secondary m-0 p-0">
+        <h6 class="m-0 text-white-50 text-center small">© Copyright Merve Gürel</h6>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+        <script src="./content/js/app.js"></script>
+</body>
+
+</html>

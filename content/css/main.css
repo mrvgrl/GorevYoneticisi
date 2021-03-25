@@ -1,0 +1,83 @@
+/* tasarım işlemlerı */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+    
+}
+html{
+    font-family:"Open Sans", sans-serif;
+}
+.yukleme{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    flex: content;
+    align-content: center;
+    justify-content: center;
+    z-index: 100;
+    background-color:#80808078;
+}
+
+/* Navbar Sectıon */
+td{
+    padding: 0px!important;
+}
+
+#plan{
+    color:#fff;
+    padding:1rem;
+}
+.table{
+    table-layout:fixed;
+    word-wrap: break-word;
+}
+
+ h3{
+  color: white;
+}
+
+ #not{
+        color:#333;
+        padding:1rem;
+        
+
+    }
+.notlar {
+        display: flex;
+        flex-direction: column;
+        padding:1rem;
+    }
+.not{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+.satir{ 
+    height: 10rem;
+    max-height: 10rem;
+    width: 100%;
+    
+}
+.sutun{
+      width: 100%;
+  }  
+
+.list-group{
+    font-size: 0.75rem;
+    font-weight: 900px;
+}
+  
+.modalOpen{
+    color: black;
+}
+.modalOpen:hover{
+    color:green;
+font-size: large;
+}

@@ -1,0 +1,26 @@
+/* colors */
+.bg-dark-blue{
+    background: #062e51;
+}
+.bg-ligth-blue{
+    background: #336ea2;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* text */
+.text-center{
+    text-align: center; 
+ }
+ .heading-small{
+     font-size:1 rem;
+ }
+ .heading-medium{
+     font-size:1.7rem;
+ }
+ .heading-big{
+     font-size: 1.75rem;
+ }
+ 
